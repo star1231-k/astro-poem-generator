@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Astro Poem Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>Welcome to the AI Astrology Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the Astrology Poem"
@@ -23,10 +24,8 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          Bright star, would I were stedfast as thou art—
-          <br />
-          Not in lone splendour hung aloft the night...
+        <div class="poem" id="poem">Bright star, would I were stedfast as thou art—
+         
         </div>
       </main>
       <footer>
