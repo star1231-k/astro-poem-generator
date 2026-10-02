@@ -7,37 +7,48 @@
     <title>AI Astro Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Astrology Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Astrology Poem"
-          autofocus
-          required
-          autocomplete="off"
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Astrology Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the Astrology Poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
           />
-        <input type="submit" />
-      </form>
-      <div id="poem">
-        The Poem will go here
-        <br>
-        The Poem will go here
-      </div>
-    </main>
-    <footer>
-      This AI project is coded by
-      <a href="https://github.com/star1231-k" target="_blank">Keena T</a> and is
-      <a
-        href="https://github.com/star1231-k/astro-poem-generator"
-        target="blank"
-        >open-sourced on Github</a
-      >
-      and is hosted on
-      <a href="https://astro-poem.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          Bright star, would I were stedfast as thou art—
+          <br />
+          Not in lone splendour hung aloft the night...
+        </div>
+      </main>
+      <footer>
+        John Keats,
+        <a
+          href="https://interestingliterature.com/2018/07/a-short-analysis-of-john-keatss-bright-star-would-i-were-steadfast-as-thou-art/"
+          target="_blank"
+          >'Bright Star'</a
+        >.
+        <br />
+        This AI project is coded by
+        <a href="https://github.com/star1231-k" target="_blank">Keena T</a> and
+        is
+        <a
+          href="https://github.com/star1231-k/astro-poem-generator"
+          target="blank"
+          >open-sourced on Github</a
+        >
+        and is hosted on
+        <a href="https://astro-poem.netlify.app/" target="_blank">Netlify</a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
