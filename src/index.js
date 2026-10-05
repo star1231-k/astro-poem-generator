@@ -17,13 +17,9 @@ function generatePoem(event) {
   let prompt = `User Instructions: Generate an astrology poem about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-let poemElement = document.querySelector("#poem");
-poemElement.classList.remove("hidden");
-poemElement.innerHTML = `Generating the Romantic Astrology poem about ${instructionsInput.value}`;
-
-  console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `Generating the Romantic Astrology poem about ${instructionsInput.value}`;
 
   axios.get(apiURL).then(displayPoem);
 }
